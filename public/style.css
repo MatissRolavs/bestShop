@@ -1,3 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --header-height: 50px;
+
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: var(--header-height);
+  padding: 0 20px;
+}
+header > div{
+  display:flex;
+  gap:10px;
+}
+header form {
+  width: auto;
+}
+header button {
+  height: 100%;
+}
+main{
+  margin-top: var(--header-height);
+}
 form {
   display: flex;
   flex-direction: column;

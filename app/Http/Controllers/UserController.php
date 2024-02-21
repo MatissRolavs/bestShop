@@ -46,5 +46,10 @@ class UserController extends Controller
             return redirect("/login");
         }
     }
+    public function logout() {
+        auth()->logout();
 
+        return redirect("/products");
+
+    }
 }
